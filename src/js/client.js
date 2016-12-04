@@ -7,7 +7,6 @@ import store from "./store";
 /*
  * Pages & Components
  */
-import CreatePost from "./pages/CreatePost";
 import Home from "./pages/Home";
 import NoMatch from "./pages/NoMatch";
 import Pages from "./pages/Pages";
@@ -29,7 +28,6 @@ window.fbAsyncInit = function() {
 				<Route path="/" component={PosterboyApp}>
 					<IndexRoute component={Home} />
 			      	<Route path="/pages" component={Pages} />
-			        <Route path="/pages/page/:pageId/post/create" component={CreatePost} />
 			        <Route path="/pages/:pageId/posts" component={Posts} />
 			      	<Route path="*" component={NoMatch} />
 			    </Route>

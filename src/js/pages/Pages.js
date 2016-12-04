@@ -33,28 +33,14 @@ export default class Pages extends React.Component {
 					key={index}
 					bsClass="page-header"
 				>
-					<table>
-						<thead>
-							<tr>
-								<th>Page Id</th>
-								<th>Category</th>
-								<th>Page Name</th>
-								<th>Permissions</th>
-								<th>Manage Posts</th>
-							</tr>
-						</thead>
-						<tbody>
-							<PageInfo 
-								key={page.access_token}
-								id={page.id}
-								name={page.name}
-								category={page.category}
-								router={this.props.router}
-								permissions={page.perms}
-							>
-							</PageInfo>
-						</tbody>
-					</table>
+					<PageInfo
+						key={index}
+						pageID={page.id}
+						pageToken={page.access_token}
+						category={page.category}
+						permissions={page.perms}
+					>
+					</PageInfo>
 				</Panel>
 			);
 		});
