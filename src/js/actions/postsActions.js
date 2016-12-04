@@ -94,3 +94,28 @@ export function deletePostAction(postID, pageToken) {
         });
     }
 }
+
+export function getPostViewCounts(postID, pageToken) {
+    return function(dispatch) {
+        const query = "/" + postID + "/insights/post_impressions_unique";
+        FB.api(
+            query,
+            {
+                "access_token": pageToken
+            },
+            function (response) {
+                if (response && !response.error) {
+                    const payload = {
+                        postID: postID,
+                        count: response.data[0].values[0].value
+                    }
+                    dispatch({
+                        type: "POST_VIEW_COUNT_FULFILLED",
+                        payload: payload
+                    })
+                }
+            }
+        );
+    }
+}
+

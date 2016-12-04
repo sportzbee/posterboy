@@ -72,6 +72,31 @@ export default function postsReducer(state=defPostsState, action) {
                 actionStatus: 'Failed to delete Post'
             }
         }
+        case "POST_VIEW_COUNT_FULFILLED": {
+            const postID = action.payload.postID;
+            const publishedPosts = state.posts.published.map((post) => {
+                if(post.id === postID) {
+                    post.viewCount = action.payload.count;
+                }
+                return post;
+            });
+
+            const unPublishedPosts = state.posts.unpublished.map((post) => {
+                if(post.id === postID) {
+                    post.viewCount = action.payload.count;
+                }
+                return post;
+            });
+
+            return {
+                ...state,
+                posts: {
+                    ...state.posts,
+                    published: publishedPosts,
+                    unpublished: unPublishedPosts
+                }
+            }
+        }
         case "LOGOUT_FULFILLED": {
             return defPostsState
         }

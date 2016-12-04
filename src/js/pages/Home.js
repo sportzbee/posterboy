@@ -51,7 +51,7 @@ export default class Login extends React.Component {
 					data-size="xlarge" 
 					data-show-faces="false" 
 					data-auto-logout-link="true"
-					data-scope="manage_pages,publish_pages,pages_show_list"				
+					data-scope="manage_pages,publish_pages,pages_show_list,read_insights"				
 				>
 					Login
 				</div>
