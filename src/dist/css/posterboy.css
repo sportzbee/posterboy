@@ -1,0 +1,194 @@
+/* Facebook palette */
+/*#3b5998 (59,89,152)
+#8b9dc3 (139,157,195)
+#dfe3ee (223,227,238)
+#f7f7f7 (247,247,247)
+#ffffff*/
+
+/* Elements */
+html, body {
+	height: 100%;
+	min-height: 100%;
+    box-sizing: border-box;
+    display: block;
+    color: #8b9dc3; 
+}
+button {
+    color: white;
+    background: #3b5998;
+    border-radius: 5px;
+    line-height: 21px;
+    border: none;
+    min-width: 100px;
+}
+button:hover {
+    cursor: crosshair;
+    color: #3b5998;
+    background: white;
+    border: 1px solid #3b5998;
+}
+table {
+    width: 90%;
+    white-space: nowrap;
+    border-collapse: separate;
+}
+th{
+    color: white;
+    background: #3b5998;
+    text-align: left;
+    padding: 5px 15px 5px 15px;
+}
+tr {
+    min-height: 35px;
+}
+td{
+    line-height: 21px;
+    padding: 2px 15px 2px 15px;
+    border: 1px dotted #f7f7f7;
+}
+tbody tr:nth-child(odd) {
+    background: #dfe3ee;
+    color: #8b9dc3;
+}
+tbody tr:nth-child(even) {
+    color: #dfe3ee;
+    background: #8b9dc3;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Elements by Id*/
+#app-root{
+    height: 100%;
+    min-height: 100%;
+    margin: 2px;
+    display: block;
+}
+#app-header-content {
+    min-height: 64px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2px;
+    background: #dfe3ee;
+    color: #8b9dc3; 
+    width: 100%;
+}
+#app-icon-container {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    vertical-align: top;
+    float: left;   
+    position: relative;
+    padding: 4px 10px 0px 0px;
+    cursor: pointer;
+}
+#app-icon {
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    min-height: 60px;
+    min-width: 60px;
+    max-width: 100%;
+    height: auto;    
+}
+#app-title {
+    display: inline-block;
+    color: #3b5998;
+    font-weight: 500;
+    line-height: 55px;
+    font-size: 40px;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+}
+#nav-menu {
+    text-align: right;
+    left: 150px;
+}
+#app-profile {
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    right: 15px;
+}
+#app-profile-pic-container {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    vertical-align: top;
+    float: right;   
+    position: relative;
+    padding: 4px 10px 0px 0px;
+    border: none;
+}
+#app-profile-pic {
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    min-height: 60px;
+    min-width: 60px;
+    border: none;
+}
+#app-body {
+    position: relative;
+    left: 72px;
+    top: 80px;
+    bottom: 15%;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+}
+#app-footer {
+    line-height: 21px;
+    position: relative;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    color: #8b9dc3;
+    background: #f7f7f7;
+    padding: 5px 15px 5px 15px;
+}
+
+/* Elements by class */
+.nav-item {
+    color: #3b5998;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 55px;
+    width: 100px;
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+    white-space: nowrap;
+}
+.nav-item:hover {
+    border-color: black;
+    border-top: 0px;
+    border-bottom: 3px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: dotted;
+    text-decoration: none;
+}
+.panel-heading{
+    background-color: #3b5998;
+}
+.post-create {
+    display: block;
+}
+.post-configure {
+    display: inline-block;
+}
+.post-publish {
+    text-align: right;
+}
+.jumbotron {
+    width: 80%;
+    height: 100%;
+}
+.page-manage-posts {
+    display: block;
+}
