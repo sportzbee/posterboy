@@ -29,12 +29,15 @@ export default class Posts extends React.Component {
 		if(postList.length) {
 			posts = postList.map((post, index) => {
 				const postMessage = post.story ? post.story : post.message;
+				const postViewCount = post.viewCount ? post.viewCount : -1;
+
 				return(
 					<Post 
 						key={index} 
 						postId={post.id} 
 						story={postMessage}
 						isPublished={post.isPublished}
+						viewCount={postViewCount}
 						pageId={this.props.params.pageId}
 						pageToken={selectedPage.access_token}
 					/>
@@ -58,6 +61,7 @@ export default class Posts extends React.Component {
 							<th>Post ID</th>
 							<th>Story</th>
 							<th>Is Published</th>
+							<th>Post Views</th>
 							<th></th>
 						</tr>
 					</thead>
