@@ -37,7 +37,3 @@ export default class Post extends React.Component {
 		)
 	}
 }
-
-// <button type="button" >
-// 						<i class="fa fa-trash-o" aria-hidden="true"></i> Delete Post
-// 					</button>
