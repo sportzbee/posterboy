@@ -35,7 +35,7 @@ export default class Login extends React.Component {
 		return (
 		 	<Jumbotron>
 		 		<div><h2>Manage Facebook Pages with...<strong>Posterboy</strong></h2>
-				Posterboy helps you to manage all your pages in one place.
+				<h4>Posterboy helps you to manage all your pages in one place.</h4>
 				<ul>
 					<li>View a list of the Pages that you manage</li>
 					<li>
