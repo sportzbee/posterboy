@@ -198,8 +198,11 @@ a:hover {
     text-align: right;
 }
 .jumbotron {
-    width: 80%;
+    width: 85%;
     height: 100%;
+    min-height: 450px;
+    padding-top: 100px;
+    padding-left: 200px;
 }
 .page-manage-posts {
     display: inline-block;
